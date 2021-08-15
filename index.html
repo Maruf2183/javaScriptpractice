@@ -7,6 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cmt {
+            margin-top: 100px;
+            box-shadow: 1px 0px 10px grey;
+            background-color: rgb(187, 223, 187);
+            border-radius: 7px;
+        }
+
+        .button {
+            margin-top: 6px;
+            padding: 6px 22px 6px 22px;
+            color: rgb(145, 2, 246);
+
+            border-radius: 12px;
+
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .status-poster {
+            padding: 100px 0px 200px 0px;
+            text-align: center;
+
+        }
+
+        .comment-list {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,10 +55,27 @@
     <button id="darkOliveGreen">Click Me: for darkolivgreen</button><br>
 
 
+    <P id="comment-reciever">Your opinion get here</P>
+    <div class="container">
+        <input class="cmt" id="comment-box" type="text"><br>
+        <button class="button" id="btn">Post here</button>
+
+    </div>
+
+
+    <div class="comment-list" id="opinion-list">
+        <h2>Your opinion attach here</h2>
+
+    </div>
+
+
+    <div class="status-poster">
+        <textarea name="opinion" id="opinion-field" cols="30" rows="4"></textarea><br>
+        <button id="post-button">Post your opinion</button>
 
 
 
-    <script src="dom.js"></script>
+        <script src="dom.js"></script>
 </body>
 
 </html>

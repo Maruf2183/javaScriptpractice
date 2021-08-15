@@ -31,8 +31,25 @@ document.getElementById('darkOliveGreen').addEventListener('click',
         document.body.style.backgroundColor = 'DarkOliveGreen';
     })
 
+document.getElementById('btn').addEventListener('click', function () {
+    const commentBox = document.getElementById('comment-box');
+    const commentReciever = document.getElementById('comment-reciever');
+    commentReciever.innerText = commentBox.value;
+    commentBox.value = '';
+
+
+
+})
+
+document.getElementById('post-button').addEventListener('click', function () {
+    const opinionField = document.getElementById('opinion-field');
+    const p = document.createElement('p');
+    p.innerText = opinionField.value;
+    const parentDiv = document.getElementById('opinion-list');
+    parentDiv.appendChild(p);
+    opinionField.value = '';
 
 
 
 
-
+})
